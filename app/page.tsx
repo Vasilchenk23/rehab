@@ -1,5 +1,3 @@
-
-import Layout from "./layout"
 import Hero from "./components/Hero"
 import AboutSection from "./components/AboutSection"
 
