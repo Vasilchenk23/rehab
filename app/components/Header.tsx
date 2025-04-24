@@ -23,7 +23,7 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <img src="/img/logo.svg" alt="Family Rehab" className="h-full w-auto" />
         </Link>
-        <nav className="desktop space-x-8 font-medium">
+        <nav className="desktop space-x-30 font-medium">
           <Link href="/" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Головна</Link>
           <Link href="/services" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Послуги</Link>
           <Link href="/prices" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Ціни</Link>

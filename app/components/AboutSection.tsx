@@ -138,31 +138,65 @@ export default function AboutSection() {
           );
         })}
       </div>
-      <h2 className="text-4xl md:text-5xl font-extrabold text-teal-600 mt-20 mb-10">
-        ВІДГУКИ ПРО НАС
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[
-          { stars: 5, text: 'Все необхідне в одному місці — дуже зручно!', name: 'Ганна Вознюк', ago: '8 місяців тому' },
-          { stars: 5, text: 'Дуже вдячні за професійного лікаря Лапіну Валерію!', name: 'Тетяна Гук', ago: '6 місяців тому' },
-          { stars: 5, text: 'Пройшли масаж, мануальну терапію — помітний результат!', name: 'Олександр Лемешко', ago: '3 місяці тому' },
-          { stars: 5, text: 'Дуже вдячні команді центру за якісну діагностику!', name: 'Олена Остапік', ago: '1 місяць тому' },
-        ].map((rev, i) => (
-          <div
-            key={i}
-            className="bg-white p-6 border border-gray-200 rounded-[20px] shadow-sm"
-          >
-            <div className="flex mb-2">
-              {'★'.repeat(rev.stars).split('').map((s, idx) => (
-                <span key={idx} className="text-yellow-500 text-lg">{s}</span>
-              ))}
-            </div>
-            <p className="text-gray-700 mb-2">{rev.text}</p>
-            <p className="font-semibold text-sm text-gray-900">{rev.name}</p>
-            <p className="text-xs text-gray-500">{rev.ago}</p>
-          </div>
-        ))}
+      <h2 className="text-4xl md:text-5xl font-extrabold text-teal-600 mt-20 mb-12">
+  ВІДГУКИ ПРО НАС
+</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+  {[
+    {
+      stars: 5,
+      text: 'Все необхідне в одному місці — дуже зручно!',
+      name: 'Ганна Вознюк',
+      ago: '8 місяців тому',
+      avatar: '/img/avatar-anna.jpg',
+    },
+    {
+      stars: 5,
+      text: 'Дуже вдячні за професійного лікаря Ладика Валерію!',
+      name: 'Тетяна Гук',
+      ago: '6 місяців тому',
+      avatar: '/img/avatar-tetyana.jpg',
+    },
+    {
+      stars: 5,
+      text: 'Пройшли масаж, мануальну терапію — помітний результат!',
+      name: 'Олександр Лемешко',
+      ago: '3 місяці тому',
+      avatar: '/img/avatar-oleksandr.jpg',
+    },
+    {
+      stars: 5,
+      text: 'Дуже вдячні команді центру за якісну діагностику!',
+      name: 'Олена Остапік',
+      ago: '1 місяць тому',
+      avatar: '/img/avatar-olena.jpg',
+    },
+  ].map((rev, i) => (
+    <div key={i} className="flex flex-col items-center">
+      <div className="w-full bg-white p-6 border border-teal-300 rounded-[30px]">
+        <div className="flex mb-3">
+          {Array(rev.stars)
+            .fill(0)
+            .map((_, idx) => (
+              <span key={idx} className="text-yellow-500 text-lg mr-1">★</span>
+            ))}
+        </div>
+        <p className="text-gray-800 leading-relaxed">{rev.text}</p>
       </div>
+
+      <div className="mt-4 flex flex-col items-center">
+        <img
+          src={rev.avatar}
+          alt={rev.name}
+          className="w-12 h-12 rounded-full object-cover mb-2"
+        />
+        <p className="font-semibold text-gray-900">{rev.name}</p>
+        <p className="text-xs text-gray-500">{rev.ago}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
       </section>
     )
