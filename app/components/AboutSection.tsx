@@ -7,14 +7,14 @@ export default function AboutSection() {
             {
               id: 'cloud-mobile',
               type: 'svg',
-              src: '/cloud.svg',
+              src: './cloud.svg',
               className: 'block sm:hidden',
               style: { top: 20, left: 10, width: 100 },
             },
             {
               id: 'cloud-desktop',
               type: 'svg',
-              src: '/cloud.svg',
+              src: './cloud.svg',
               className: 'hidden sm:block',
               style: { top: 60, left: 80, width: 160 },
             },

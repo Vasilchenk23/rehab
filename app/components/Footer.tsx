@@ -1,11 +1,10 @@
-
 export default function Footer() {
   return (
     <footer className="bg-teal-400 text-white py-12">
       <div className="max-w-10xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-start">
           <img
-            src="./img/logo.svg"
+            src="/img/logo.svg"
             alt="Family Rehab logo"
             className=" mb-4"
           />

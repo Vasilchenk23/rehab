@@ -1,31 +1,58 @@
+"use client"
+
+import { useState } from 'react'
 import Link from 'next/link'
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
-    <header className="bg-[#5DD3D3] text-white h-53">
-      <div className="bg-blue-600 text-white text-sm">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-2">
-        <span>м. Харків, вул. проїзд Стадіонний, 6/5</span>
-        <span>вівторок, четвер, субота з 09:00 - 14:00</span>
-        <span>+380 (68) 21-01-302</span>
-        <span>+380 (68) 21-01-302</span>
-        <span>+380 (68) 21-01-302</span>
+    <header className="bg-[#5DD3D3] text-white h-[303px] relative">
+      <div className="bg-[#4993D2] text-white text-sm">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-11 py-2">
+          <span>м. Харків, вул. проїзд Стадіонний, 6/5</span>
+          <span>вівторок, четвер, субота з 09:00 - 14:00</span>
+          <span>+380 (68) 21-01-302</span>
+          <span>+380 (68) 21-01-302</span>
+          <span>+380 (68) 21-01-302</span>
+        </div>
       </div>
-      </div>
-      <div className="mx-auto w-[1251px] h-[65px] flex items-center justify-between bg-white rounded-[80px] my-15 px-6">
+
+      <div className="w-full max-w-[1451px] h-[65px] flex items-center justify-between bg-white rounded-[80px] mt-[60px] px-[50px] mx-auto relative">
         <Link href="/" className="flex items-center">
-          <img src="./img/logo.svg" alt="Family Rehab" className="h-full w-auto" />
+          <img src="/img/logo.svg" alt="Family Rehab" className="h-full w-auto" />
         </Link>
-        <nav className="space-x-6 font-medium">
-          <Link href="/" className="hover:text-[#FF2F65] text-black transition-colors">Головна</Link>
-          <Link href="/services" className="hover:text-[#FF2F65] text-black transition-colors">Послуги</Link>
-          <Link href="/prices" className="hover:text-[#FF2F65] text-black transition-colors">Ціни</Link>
-          <Link href="/blog" className="hover:text-[#FF2F65] text-black transition-colors">Блог</Link>
-          <Link href="/contacts" className="hover:text-[#FF2F65] text-black transition-colors">Контакти</Link>
+        <nav className="hidden md:flex space-x-30 font-medium">
+          <Link href="/" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Головна</Link>
+          <Link href="/services" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Послуги</Link>
+          <Link href="/prices" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Ціни</Link>
+          <Link href="/blog" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Блог</Link>
+          <Link href="/contacts" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Контакти</Link>
         </nav>
-        <a href="tel:+380682101302" className="text-[#FF6B0A] px-4 py-2 font-bold">
+        <button className="md:hidden text-black" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        <a href="tel:+380682101302" className="text-[#FF6B0A] text-2xl font-black w-auto font-bold hidden md:block">
           +380 (68) 21‑01‑302
         </a>
+        {menuOpen && (
+          <div className="fixed inset-0 bg-white text-black flex flex-col items-center justify-center space-y-6 z-50 md:hidden">
+            <button
+              className="absolute top-6 right-6 text-black"
+              onClick={() => setMenuOpen(false)}
+            >
+              <X size={32} />
+            </button>
+            <Link href="/" className="text-xl font-medium hover:text-[#FF2F65]" onClick={() => setMenuOpen(false)}>Головна</Link>
+            <Link href="/services" className="text-xl font-medium hover:text-[#FF2F65]" onClick={() => setMenuOpen(false)}>Послуги</Link>
+            <Link href="/prices" className="text-xl font-medium hover:text-[#FF2F65]" onClick={() => setMenuOpen(false)}>Ціни</Link>
+            <Link href="/blog" className="text-xl font-medium hover:text-[#FF2F65]" onClick={() => setMenuOpen(false)}>Блог</Link>
+            <Link href="/contacts" className="text-xl font-medium hover:text-[#FF2F65]" onClick={() => setMenuOpen(false)}>Контакти</Link>
+            <a href="tel:+380682101302" className="text-[#FF6B0A] font-bold text-lg">+380 (68) 21‑01‑302</a>
+          </div>
+        )}
       </div>
     </header>
   )
