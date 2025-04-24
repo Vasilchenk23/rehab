@@ -39,3 +39,27 @@ body {
   font-style: normal;
 }
 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @media (min-width: 1388px) {
+    .desktop {
+      display: flex !important;
+    }
+    .mobile {
+      display: none !important;
+    }
+  }
+  @media (max-width: 1387px) {
+    .desktop {
+      display: none !important;
+    }
+    .mobile {
+      display: flex !important;
+    }
+  }
+}
+
