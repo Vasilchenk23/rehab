@@ -1,4 +1,5 @@
 import React from "react";
+import HeroSection from "../components/HeroSection";
 
 export default function PriceListPage() {
   const items = [
@@ -27,25 +28,36 @@ export default function PriceListPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-pink-50 p-6">
-      <h1 className="text-3xl font-bold text-center text-cyan-900 mb-8">Прайс-лист</h1>
-
-      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md overflow-hidden">
-        <div className="grid grid-cols-[1fr_auto] gap-x-4 px-6 py-4 border-b border-gray-200">
-          <span className="text-cyan-900 font-semibold">Послуги</span>
-          <span className="text-cyan-900 font-semibold text-right">Ціна, грн</span>
-        </div>
-
-        <div className="">
-          {items.map((item, idx) => (
-            <div key={idx} className="flex items-center px-6 py-4">
-              <span className="flex-shrink-0 text-gray-800">{item.name}</span>
-              <span className="flex-grow border-t border-dashed border-gray-300 mx-4" />
-              <span className="flex-shrink-0 text-gray-800">{item.price}</span>
-            </div>
-          ))}
-        </div>
+    <>
+    <HeroSection
+          heading="Family Rehab"
+          paragraph="Ціни"
+          imageSrc="/img/main.svg"
+          buttonText="записатися"
+          buttonHref="#about"
+        />
+    <main className="min-h-screen bg-pink-50 p-4 sm:p-6">
+    <div className="max-w-[1451px] mx-auto rounded-2xl overflow-hidden">
+      <div className="hidden sm:grid grid-cols-[1fr_auto] gap-x-4 px-6 sm:px-12 py-4">
+        <h1 className="text-5xl max-w-[1451px] font-bold uppercase text-[#5DD3D3]">послуги</h1>
+        <h1 className="text-5xl max-w-[1451px] font-bold text-[#5DD3D3]">ЦIНА, грн</h1>
       </div>
-    </main>
+      <div>
+        {items.map((item, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col sm:flex-row sm:items-center gap-2 px-6 sm:px-12 py-4 border-b border-gray-100"
+          >
+            <span className="text-gray-800 w-[240px] text-sm sm:text-base">{item.name}</span>
+            <div className="hidden sm:block flex-grow border-t border-dashed border-gray-300 mx-4" />
+            <span className="text-gray-800 text-sm sm:text-base sm:text-right sm:w-24">
+              {item.price} грн
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+  </>
   );
 }

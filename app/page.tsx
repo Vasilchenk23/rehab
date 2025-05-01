@@ -1,11 +1,17 @@
-import Hero from "./components/Hero"
+import HeroSection from "./components/HeroSection"
 import AboutSection from "./components/AboutSection"
 
 
 export default function Home() {
   return (
     <>
-     <Hero />
+      <HeroSection
+      heading="Family Rehab"
+      paragraph="Центр сімейної реабілітації"
+      imageSrc="/img/main.svg"
+      buttonText="Дізнатися більше"
+      buttonHref="#about"
+    />
      <AboutSection />
     </>
      

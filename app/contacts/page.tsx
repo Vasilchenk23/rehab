@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import HeroSection from "../components/HeroSection";
 import { MapPin, Clock, Phone, } from "lucide-react";
 
 export default function ContactsPage() {
@@ -21,6 +22,14 @@ export default function ContactsPage() {
   ];
 
   return (
+    <>
+    <HeroSection
+          heading="Family Rehab"
+          paragraph="контакти"
+          imageSrc="/img/frame-contact.svg"
+          buttonText="записатися"
+          buttonHref="#about"
+        />
     <section className="flex flex-col lg:flex-row items-start bg-pink-50 p-6 lg:p-12">
       <div className="flex-1 max-w-md">
         <h2 className="text-3xl font-bold text-cyan-400 mb-6">НАШІ КОНТАКТИ</h2>
@@ -84,5 +93,6 @@ export default function ContactsPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }
