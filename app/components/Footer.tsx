@@ -10,11 +10,11 @@ export default function Footer() {
             height={100}
             src="/img/logo.svg"
             alt="Family Rehab logo"
-            className=" mb-4"
+            className="mb-4"
           />
           <span className="font-bold text-center text-xl">Family Rehab</span>
         </div>
-        <div className="flex flex-col text-2xl items-center px-5">
+        <div className="flex flex-col text-2xl items-start ">
           <ul className="space-y-2">
             <li>
               <a href="#" className="hover:underline">
@@ -73,6 +73,30 @@ export default function Footer() {
           </p>
         </div>
       </div>
+  <div className="mt-8 border-t border-white/50 pt-4 text-center text-sm flex flex-col sm:flex-row items-center justify-center gap-2 text-white">
+    <span className="opacity-80">сайт розроблено:</span>
+
+  <a
+    href="https://instagram.com/natalia_profile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-1 hover:underline"
+  >
+    <Image src='/img/insta.svg' width={20} height={20} alt="insta"/>
+    Наталія Твердохліб
+  </a>
+
+  <a
+    href="https://instagram.com/maxim_profile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-1 hover:underline"
+  >
+    <Image src='/img/insta.svg' width={20} height={20} alt="insta"/>
+    Максим Васильченко
+  </a>
+</div>
+
     </footer>
   );
 }

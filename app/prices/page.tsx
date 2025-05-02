@@ -32,7 +32,7 @@ export default function PriceListPage() {
     <HeroSection
           heading="Family Rehab"
           paragraph="Ціни"
-          imageSrc="/img/main.svg"
+          imageSrc="/frame-price.svg"
           buttonText="записатися"
           buttonHref="#about"
         />

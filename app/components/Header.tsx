@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="bg-[#5DD3D3] text-white h-[303px] relative">
       <div className="bg-[#4993D2] text-white text-sm">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-11 py-2">
+        <div className="w-full max-w-[1451px] mx-auto flex flex-col md:flex-row justify-between items-center px-11 py-2">
           <span>м. Харків, вул. проїзд Стадіонний, 6/5</span>
           <span>вівторок, четвер, субота з 09:00 - 14:00</span>
           <span>+380 (68) 21-01-302</span>

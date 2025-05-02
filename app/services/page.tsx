@@ -9,7 +9,7 @@ const services = [
       "Виявлення порушень нервової системи",
       "Призначення лікування та обстежень",
     ],
-    icon: "/img/services/1.png",
+    icon: "/ellipse.svg",
   },
   {
     title: "КОНСУЛЬТАЦІЯ ПСИХОЛОГА",
@@ -18,7 +18,7 @@ const services = [
       "Психологічна підтримка та поради",
       "Рекомендації щодо терапії",
     ],
-    icon: "/img/services/2.png",
+    icon: "/ellipse2.svg",
   },
   {
     title: "ЕЕГ (ЕЛЕКТРОЕНЦЕФАЛОГРАФІЯ)",
@@ -27,7 +27,7 @@ const services = [
       "Оцінка роботи головного мозку",
       "Реєстрація електричної активності мозку",
     ],
-    icon: "/img/services/3.png",
+    icon: "/ellipse3.svg",
   },
   {
     title: "РЕГ (РЕОЕНЦЕФАЛОГРАФІЯ)",
@@ -36,7 +36,7 @@ const services = [
       "Виявлення судинних порушень",
       "Оцінка тонусу судин",
     ],
-    icon: "/img/services/4.png",
+    icon: "/ellipse4.svg",
   },
   {
     title: "ЕХО (ЕХОЕНЦЕФАЛОСКОПІЯ)",
@@ -45,7 +45,7 @@ const services = [
       "Виявлення структурних змін",
       "Діагностика об'ємних утворень",
     ],
-    icon: "/img/services/5.png",
+    icon: "/ellipse.svg",
   },
   {
     title: "ДОПЛЕР СУДИН ГОЛОВИ ТА ШИЇ",
@@ -54,7 +54,7 @@ const services = [
       "Виявлення стенозів і тромбів",
       "Аналіз прохідності артерій",
     ],
-    icon: "/img/services/6.png",
+    icon: "/ellipse2.svg",
   },
   {
     title: "НЕЙРОСОНОГРАФІЯ",
@@ -63,7 +63,7 @@ const services = [
       "Виявлення анатомії та аномалій",
       "Контроль внутрішньочерепного тиску",
     ],
-    icon: "/img/services/7.png",
+    icon: "/ellipse3.svg",
   },
   {
     title: "ЕЛЕКТРОНЕЙРОМІОГРАФІЯ",
@@ -72,7 +72,7 @@ const services = [
       "Виявлення нейропатій",
       "Оцінка провідності імпульсів",
     ],
-    icon: "/img/services/8.png",
+    icon: "/ellipse4.svg",
   },
   {
     title: "НІЧНИЙ ТА ДЕННИЙ ЕЕГ ВІДЕОМОНІТОРИНГ",
@@ -81,7 +81,7 @@ const services = [
       "Виявлення нічних нападів",
       "Оцінка епілептичної активності",
     ],
-    icon: "/img/services/9.png",
+    icon: "/ellipse.svg",
   },
   {
     title: "ВИКЛИКАНІ ПОТЕНЦІАЛИ (ЗОРОВІ ТА СЛУХОВІ)",
@@ -90,7 +90,7 @@ const services = [
       "Виявлення сенсорних порушень",
       "Діагностика нейропатій",
     ],
-    icon: "/img/services/10.png",
+    icon: "/ellipse2.svg",
   },
   {
     title: "УЗД КУЛЬШОВИХ СУГЛОБІВ",
@@ -99,7 +99,7 @@ const services = [
       "Оцінка стану суглобів",
       "Контроль розвитку кульшових суглобів",
     ],
-    icon: "/img/services/11.png",
+    icon: "/ellipse3.svg",
   },
   {
     title: "ДІАДИНАМОТЕРАПІЯ",
@@ -108,7 +108,7 @@ const services = [
       "Знеболення та розслаблення",
       "Поліпшення кровообігу тканин",
     ],
-    icon: "/img/services/12.png",
+    icon: "/ellipse4.svg",
   },
   {
     title: "МАНУАЛЬНА ТЕРАПІЯ",
@@ -117,7 +117,7 @@ const services = [
       "Усунення м'язових блоків",
       "Поліпшення рухливості тіла",
     ],
-    icon: "/img/services/13.png",
+    icon: "/ellipse.svg",
   },
   {
     title: "ТЕСТ ADOS-2",
@@ -126,7 +126,7 @@ const services = [
       "Спостереження за поведінкою дитини",
       "Оцінка соціальних навичок",
     ],
-    icon: "/img/services/14.png",
+    icon: "/ellipse2.svg",
   },
   {
     title: "МАСАЖ (ЛІКУВАЛЬНИЙ ТА РОЗСЛАБЛЮЮЧИЙ)",
@@ -135,7 +135,7 @@ const services = [
       "Поліпшення кровообігу",
       "Відновлення після навантажень",
     ],
-    icon: "/img/services/15.png",
+    icon: "/ellipse3.svg",
   },
 ];
 
@@ -149,35 +149,39 @@ export default function ServicesPage() {
               buttonText="записатися"
               buttonHref="#about"
     />
-    <main className="bg-[#FFF1F3] py-16 px-4">
-      <h1 className="text-5xl max-w-[1451px] font-bold uppercase text-[#5DD3D3]">послуги</h1>
-      <div className="w-full max-w-[1451px] bg-[#5DD3D3] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 py-8">
-        {services.map((service, index) => (
-          <div key={index} className="flex justify-center">
-            <div className="relative bg-white w-[563px] rounded-xl p-6 pt-10 shadow-md">
-              <div className="absolute -top-6 right-4 w-16 h-16">
-                <Image
-                  src={service.icon}
-                  alt="Іконка"
-                  width={64}
-                  height={64}
-                  className="object-contain"
-                />
+    <main className="bg-[#FFF1F3] py-16">
+      <div className="w-full max-w-[1351px] mx-auto px-4">
+        <h1 className="text-5xl font-bold uppercase text-[#5DD3D3] mb-8">послуги</h1>
+        <div className="bg-[#5DD3D3] grid grid-cols-1 md:grid-cols-2 gap-6 py-8 px-6">
+          {services.map((service, index) => (
+            <div key={index} className="flex justify-center">
+              <div className="relative bg-white w-[563px] rounded-xl p-6 pt-10 shadow-md">
+                <div className="absolute top-9 -right-5 w-16 h-16">
+                  <Image
+                    src={service.icon}
+                    alt="Іконка"
+                    width={121}
+                    height={121}
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-[#08A1AC] mb-2 uppercase">
+                  {service.title}
+                </h3>
+                <ul className="text-sm text-xl text-gray-800 space-y-1 mb-4">
+                  {service.description.map((item, idx) => (
+                    <li key={idx} className="relative pl-6 before:absolute before:left-0 before:top-1.5 before:w-2 before:h-2 before:rounded-full before:bg-orange-500">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <button className="bg-[#FF4E8A] text-white px-5 py-1 text-2xl rounded-full hover:bg-[#e9447c] transition">
+                  Записатись
+                </button>
               </div>
-              <h3 className="text-sm font-bold text-[#08A1AC] mb-2 uppercase">
-                {service.title}
-              </h3>
-              <ul className="list-disc list-inside text-sm text-gray-800 space-y-1 mb-4">
-                {service.description.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-              <button className="bg-[#FF4E8A] text-white px-5 py-1 text-sm rounded-full hover:bg-[#e9447c] transition">
-                Записатись
-              </button>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </main>
     </>

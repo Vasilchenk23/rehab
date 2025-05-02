@@ -30,9 +30,10 @@ export default function ContactsPage() {
           buttonText="записатися"
           buttonHref="#about"
         />
-    <section className="flex flex-col lg:flex-row items-start bg-pink-50 p-6 lg:p-12">
+   <section className="bg-pink-50 py-6 lg:py-12">
+    <div className="max-w-[1451px] mx-auto w-full px-6 lg:px-12 flex flex-col lg:flex-row items-start">
       <div className="flex-1 max-w-md">
-        <h2 className="text-3xl font-bold text-cyan-400 mb-6">НАШІ КОНТАКТИ</h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-10 font-bold uppercase text-[#5DD3D3] text-center lg:text-left">нашi контакти</h2>
         <div className="flex items-start gap-3 mb-5">
           <MapPin className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
           <p className="text-gray-800">{address}</p>
@@ -80,19 +81,13 @@ export default function ContactsPage() {
         </div>
       </div>
       <div className="flex-1 mt-8 lg:mt-0 lg:ml-12 relative overflow-visible">
-        <div className="w-full h-64 lg:h-96 rounded-2xl shadow-md overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!..."
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+        <div className="w-full h-64 lg:h-120 overflow-hidden" style={{display:'flex', justifyContent:'end'}}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.859464326589!2d36.3242445!3d49.9577387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a52555de29d%3A0x9c252d6ba7f70f5e!2sStadionnyi%20Passage%2C%206-5%2C%20Kharkiv%2C%20Kharkivs&#39;ka%20oblast%2C%2061000!5e0!3m2!1sen!2sua!4v1746216668458!5m2!1sen!2sua" width="80%" height="100%" style={{border:'none' }} loading="lazy"></iframe>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
     </>
   );
 }

@@ -16,24 +16,30 @@ export default function HeroSection({
   buttonHref = "#contact",
 }: HeroSectionProps) {
   return (
-    <section className="bg-[#5DD3D3] relative px-11 pb-24 overflow-hidden">
-      <div className="w-full max-w-[1451px] mx-auto flex flex-col lg:flex-row items-center">
+    <section className="bg-[#5DD3D3] relative px-6 lg:px-24 pb-24 overflow-hidden">
+      <div className="flex w-full max-w-[1451px] mx-auto flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 text-center lg:text-left px-4">
-          <h1 className="text-8xl font-normal mb-20 text-white font-[CaprasimoRegular]">
+          <h1 className="text-5xl lg:text-8xl font-normal mb-10 lg:mb-20 text-white font-[CaprasimoRegular]">
             {heading}
           </h1>
-          <p className="mt-4 font-bold uppercase text-5xl text-white">
+          <p className="mt-4 font-bold uppercase text-2xl lg:text-5xl text-white">
             {paragraph}
           </p>
           <a
             href={buttonHref}
-            className="mt-6 inline-block uppercase bg-[#FF4878] text-white px-11 py-3 rounded-full"
+            className="mt-20 inline-block uppercase bg-[#FF4878] text-white px-11 py-3 rounded-full"
           >
             {buttonText}
           </a>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0 px-4">
-          <Image width={100} height={100} src={imageSrc} alt="Hero image" />
+        <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-end">
+          <Image
+            src={imageSrc}
+            alt="Hero image"
+            width={800}
+            height={800}
+            className="w-full max-w-[800px] h-auto"
+          />
         </div>
       </div>
     </section>
