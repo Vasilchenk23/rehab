@@ -22,7 +22,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         >
           <div className="text-white text-center text-sm font-bold uppercase px-4 pt-6 pb-3 min-h-[80px]">
             <div>{post.label}</div>
-            <div className="text-xs normal-case font-medium mt-1">{post.excerpt}</div>
+            <div className="">{post.excerpt}</div>
           </div>
 
           <div className="relative w-[600px] h-[600px] mx-auto overflow-hidden">

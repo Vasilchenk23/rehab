@@ -35,7 +35,7 @@ const advantages = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#FFB9B9]">
+    <section className="bg-pink-50">
       <div className="w-full max-w-[1451px] mx-auto flex flex-col lg:flex-row items-center py-12 px-4 sm:px-6 lg:px-11 gap-6">
         <div className="w-full lg:w-[45%] flex justify-center">
           <Image

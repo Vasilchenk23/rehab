@@ -156,7 +156,7 @@ export default function ServicesPage() {
         <div className="bg-[#5DD3D3] grid grid-cols-1 md:grid-cols-2 gap-6 py-8 px-6">
           {services.map((service, index) => (
             <div key={index} className="flex justify-center">
-              <div className="relative bg-white w-[563px] rounded-xl p-6 pt-10 shadow-md">
+              <div className="relative bg-white w-full max-w-[563px] rounded-xl p-6 pt-10 shadow-md">
                 <div className="absolute top-9 -right-5 w-16 h-16">
                   <Image
                     src={service.icon}
@@ -166,7 +166,7 @@ export default function ServicesPage() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-bold text-[#08A1AC] mb-2 uppercase">
+                <h3 className="text-xl font-bold text-[#08A1AC] mb-2 uppercase">
                   {service.title}
                 </h3>
                 <ul className="text-sm text-xl text-gray-800 space-y-1 mb-4">
