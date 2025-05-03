@@ -166,7 +166,7 @@ export default function ServicesPage() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-[16px] sm:text-[20px] font-bold text-[#08A1AC] mb-2 uppercase break-words sm:break-normal">
+                <h3 className="text-[16px] sm:text-[20px] font-bold text-[#08A1AC] mb-2 w-[250px] sm:w-[350px] uppercase break-words sm:break-normal">
                   {service.title}
                 </h3>
                 <ul className="text-sm text-xl text-gray-800 space-y-1 mb-4">
