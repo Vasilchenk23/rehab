@@ -12,35 +12,27 @@ type Props = {
 
 export function BlogCard({ slug, title, excerpt, cover, label, labelColor }: Props) {
   return (
-    <Link
-      href={`/blog/${slug}`}
-      className="block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
-    >
-      {label && (
-        <div
-          className="w-full px-4 py-3 text-center text-white text-sm font-bold uppercase"
-          style={{ backgroundColor: labelColor || "#FF4E8A" }}
-        >
-          {label}
-        </div>
-      )}
-
-      <div className="relative w-full h-[240px]">
+    <Link href={`/blog/${slug}`} className="block overflow-hidden rounded-t-xl">
+    <div className="relative" style={{ backgroundColor: labelColor || "#FF4E8A", borderTopLeftRadius: '12px', borderTopRightRadius: '12px' }}>
+      <div className="text-center text-white text-sm font-bold uppercase px-4 pt-4 pb-2 min-h-[80px]">
+        <div>{label}</div>
+        <div className="text-xs normal-case font-medium">{excerpt}</div>
+      </div>
+      <div className="relative px-5 w-full h-[240px]">
         <Image
           src={cover}
           alt={title}
-          fill
-          className="object-cover"
-          sizes="(max-width: 640px) 100vw, 33vw"
+          width={500}
+          height={500}
+          className=""
         />
       </div>
-
-      <div className="text-center px-4 py-4">
-        <p className="text-base font-bold uppercase text-gray-800 leading-snug">
-          {title}
-        </p>
-        <p className="text-sm text-gray-600">{excerpt}</p>
-      </div>
-    </Link>
+    </div>
+    <div className="text-center mt-20 px-4 py-4">
+      <p className="text-base font-bold uppercase text-gray-800 leading-snug">{label}</p>
+      <p>{excerpt}</p>
+    </div>
+  </Link>
+  
   );
 }
