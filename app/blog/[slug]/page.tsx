@@ -18,7 +18,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           backgroundColor: post.labelColor || "#5DD3D3",
           borderTopLeftRadius: "1rem",
           borderTopRightRadius: "1rem",
-          height: "600px",
+          height: "500px",
         }}
       >
         <div className="text-white text-center text-lg font-bold uppercase px-10 pt-6 pb-3">
@@ -26,7 +26,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="text-xl normal-case font-medium">{post.excerpt}</div>
         </div>
       </div>
-      <div className="absolute left-1/2 -translate-x-1/2 top-[120px] w-[90%] h-[600px]  overflow-hidden z-20 shadow-lg">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[120px] w-[90%] h-[500px]  overflow-hidden z-20 shadow-lg">
         <Image
           src={post.cover}
           alt={post.title}

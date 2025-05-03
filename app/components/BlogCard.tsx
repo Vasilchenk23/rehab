@@ -30,7 +30,7 @@ export function BlogCard({ slug, title, excerpt, cover, label, labelColor }: Pro
     </div>
     <div className="text-center mt-20 px-4 py-4">
       <p className="text-base font-bold uppercase text-gray-800 leading-snug">{label}</p>
-      <p>{excerpt}</p>
+      <p className="text-xl normal-case text-black">{excerpt}</p>
     </div>
   </Link>
   
