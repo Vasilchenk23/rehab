@@ -113,7 +113,7 @@ export default function AboutSection() {
                 className={`p-6 rounded-[30px] ${item.color === "teal" ? "bg-[#5DD3D3]" : "bg-[#FFD6D8]"}`}
               >
                 <h3 className="flex items-center mb-3">
-                  <span className="w-3 h-3 bg-orange-500 rounded-full inline-block mr-3" />
+                <span className="w-3 h-3 bg-orange-500 rounded-full inline-block mr-3 shrink-0" />
                   <span
                     className={`text-3xl font-semibold ${item.color === "teal" ? "text-white" : "text-orange-500"}`}
                   >
