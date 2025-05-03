@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     "Харків",
     "Family Rehab",
   ],
-  authors: [{ name: "Family Rehab", url: "https://family-rehab.com.ua" }],
+  authors: [{ name: "Family Rehab", url: "https://rehab-k5qzc47ho-maks-projects-5c427375.vercel.app/" }],
   creator: "Family Rehab",
-  metadataBase: new URL("https://family-rehab.com.ua"),
+  metadataBase: new URL("https://rehab-k5qzc47ho-maks-projects-5c427375.vercel.app/"),
   openGraph: {
     title: "Family Rehab — Центр сімейної реабілітації",
     description:
       "Сімейна підтримка, сучасна діагностика та турбота про здоров’я дітей і дорослих. Дізнайтесь більше про нас.",
-    url: "https://family-rehab.com.ua",
+    url: "https://rehab-k5qzc47ho-maks-projects-5c427375.vercel.app/",
     siteName: "Family Rehab",
     images: [
       {
