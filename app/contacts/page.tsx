@@ -2,7 +2,6 @@
 
 import React from "react";
 import HeroSection from "../components/HeroSection";
-import { MapPin, Clock, Phone, } from "lucide-react";
 import Image from "next/image";
 
 export default function ContactsPage() {
@@ -15,12 +14,6 @@ export default function ContactsPage() {
   ];
 
   const phones = ["+380 (66)-21-01-302", "+380 (68)-21-01-302"];
-
-  const social = [
-    { Icon: Phone, link: "https://wa.me/380660101302" },
-    { Icon: Phone, link: "https://t.me/yourchannel" },
-    { Icon: Phone, link: "https://instagram.com/yourprofile" },
-  ];
 
   return (
     <>
