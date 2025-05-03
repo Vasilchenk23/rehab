@@ -9,8 +9,8 @@ export default function Home() {
       heading="Family Rehab"
       paragraph="Центр сімейної реабілітації"
       imageSrc="/img/main.svg"
-      buttonText="Дізнатися більше"
-      buttonHref="#about"
+      buttonText="записатися"
+      buttonHref="/regiester"
     />
      <AboutSection />
     </>

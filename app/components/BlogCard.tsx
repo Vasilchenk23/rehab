@@ -6,15 +6,26 @@ type Props = {
   title: string;
   excerpt: string;
   cover: string;
+  label?: string;
+  labelColor?: string;
 };
 
-export function BlogCard({ slug, title, excerpt, cover }: Props) {
+export function BlogCard({ slug, title, excerpt, cover, label, labelColor }: Props) {
   return (
     <Link
       href={`/blog/${slug}`}
-      className="block bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition"
+      className="block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
     >
-      <div className="relative h-48 w-full">
+      {label && (
+        <div
+          className="w-full px-4 py-3 text-center text-white text-sm font-bold uppercase"
+          style={{ backgroundColor: labelColor || "#FF4E8A" }}
+        >
+          {label}
+        </div>
+      )}
+
+      <div className="relative w-full h-[240px]">
         <Image
           src={cover}
           alt={title}
@@ -23,9 +34,12 @@ export function BlogCard({ slug, title, excerpt, cover }: Props) {
           sizes="(max-width: 640px) 100vw, 33vw"
         />
       </div>
-      <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 line-clamp-3">{excerpt}</p>
+
+      <div className="text-center px-4 py-4">
+        <p className="text-base font-bold uppercase text-gray-800 leading-snug">
+          {title}
+        </p>
+        <p className="text-sm text-gray-600">{excerpt}</p>
       </div>
     </Link>
   );

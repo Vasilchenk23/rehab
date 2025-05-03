@@ -28,7 +28,7 @@ export default function ContactsPage() {
           paragraph="контакти"
           imageSrc="/img/frame-contact.svg"
           buttonText="записатися"
-          buttonHref="#about"
+          buttonHref="/regiester"
         />
    <section className="bg-pink-50 py-6 lg:py-12">
     <div className="max-w-[1451px] mx-auto w-full px-6 lg:px-12 flex flex-col lg:flex-row items-start">

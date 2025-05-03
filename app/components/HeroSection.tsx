@@ -13,7 +13,7 @@ export default function HeroSection({
   paragraph,
   imageSrc,
   buttonText = "Записатися",
-  buttonHref = "#contact",
+  buttonHref = "/regiester",
 }: HeroSectionProps) {
   return (
     <section className="bg-[#5DD3D3] relative px-6 lg:px-24 pb-24 overflow-hidden">

@@ -3,11 +3,8 @@ import { BlogCard } from "../components/BlogCard";
 
 export default function BlogPage() {
   return (
-    <main className="p-6 lg:p-12 bg-pink-50 min-h-screen">
-      <h1 className="text-4xl font-bold text-center text-cyan-900 mb-12">
-        Наш блог
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <main className="p-6 lg:p-12 bg-[#FFF1F3] min-h-screen">
+      <div className="w-full max-w-[1351px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {posts.map((p) => (
           <BlogCard
             key={p.slug}
@@ -15,6 +12,8 @@ export default function BlogPage() {
             title={p.title}
             excerpt={p.excerpt}
             cover={p.cover}
+            label={p.label}
+            labelColor={p.labelColor}
           />
         ))}
       </div>

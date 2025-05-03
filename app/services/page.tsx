@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroSection from "../components/HeroSection";
+import Link from "next/link";
 
 const services = [
   {
@@ -147,7 +148,7 @@ export default function ServicesPage() {
               paragraph="Наші послуги"
               imageSrc="/frame-services.svg"
               buttonText="записатися"
-              buttonHref="#about"
+              buttonHref="/regiester"
     />
     <main className="bg-[#FFF1F3] py-16">
       <div className="w-full max-w-[1351px] mx-auto px-4">
@@ -175,9 +176,13 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-[#FF4E8A] text-white px-5 py-1 text-2xl rounded-full hover:bg-[#e9447c] transition">
-                  Записатись
-                </button>
+               
+              <Link
+                href="/regiester"
+                className="bg-[#FF4E8A] text-white px-5 py-1 text-2xl rounded-full hover:bg-[#e9447c] transition"
+              >
+                Записатись
+              </Link>
               </div>
             </div>
           ))}
