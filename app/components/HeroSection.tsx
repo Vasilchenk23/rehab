@@ -22,12 +22,12 @@ export default function HeroSection({
           <h1 className="text-5xl lg:text-8xl font-normal mb-10 lg:mb-20 text-white font-[CaprasimoRegular]">
             {heading}
           </h1>
-          <p className="mt-4 font-bold uppercase text-2xl lg:text-5xl text-white">
+          <p className="mt-4 lg:mt-8 font-bold uppercase text-2xl lg:text-5xl text-white leading-tight min-h-[3.5rem]">
             {paragraph}
           </p>
           <a
             href={buttonHref}
-            className="mt-20 inline-block uppercase bg-[#FF4878] text-white px-11 py-3 rounded-full"
+            className="mt-20 inline-block uppercase bg-[#FF4878] hover:bg-[#FF0446] text-white px-11 py-3 rounded-full transition-colors duration-300"
           >
             {buttonText}
           </a>

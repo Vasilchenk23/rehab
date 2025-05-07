@@ -177,12 +177,12 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                
-              <Link
-                href="/regiester"
-                className="bg-[#FF4E8A] text-white px-5 py-1 text-2xl rounded-full hover:bg-[#e9447c] transition"
-              >
-                Записатись
-              </Link>
+                <Link
+                  href="/regiester"
+                  className="bg-[#FF4E8A] text-white px-5 py-1 text-2xl rounded-full hover:bg-[#FF0446] transition-colors duration-300"
+                >
+                  Записатись
+                </Link>
               </div>
             </div>
           ))}

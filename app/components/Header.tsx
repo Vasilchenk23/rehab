@@ -23,20 +23,20 @@ export default function Header() {
         <Link href="/" className="flex items-center">
           <Image width={100} height={100} src="/img/logo.svg" alt="Family Rehab" className="h-full w-auto" />
         </Link>
-        <nav className="desktop space-x-30 font-medium">
-          <Link href="/" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Головна</Link>
-          <Link href="/services" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Послуги</Link>
-          <Link href="/prices" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Ціни</Link>
-          <Link href="/blog" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Блог</Link>
-          <Link href="/contacts" className="hover:text-[#FF2F65] text-xl font-bold uppercase text-black transition-colors">Контакти</Link>
+        <nav className="desktop space-x-30 font-medium text-[#4B4B4B]">
+          <Link href="/" className="hover:text-[#FF2F65] text-xl font-bold uppercase">Головна</Link>
+          <Link href="/services" className="hover:text-[#FF2F65] text-xl font-bold uppercase ">Послуги</Link>
+          <Link href="/prices" className="hover:text-[#FF2F65] text-xl font-bold uppercase transition-colors">Ціни</Link>
+          <Link href="/blog" className="hover:text-[#FF2F65] text-xl font-bold uppercase transition-colors">Блог</Link>
+          <Link href="/contacts" className="hover:text-[#FF2F65] text-xl font-bold uppercase transition-colors">Контакти</Link>
         </nav>
         <button
-          className="mobile text-black"
+          className="mobile"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen
-            ? <X size={28} />
-            : <Menu size={28} />
+            ? <X size={28} color="#4993D2" />
+            : <Menu size={28} color="#4993D2" />
           }
         </button>
         <a

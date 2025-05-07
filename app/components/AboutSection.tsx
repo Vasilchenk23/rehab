@@ -81,20 +81,25 @@ export default function AboutSection() {
       </div>
       <div className="bg-pink-50 py-8">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-center max-w-[1451px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 items-center justify-center max-w-[1451px] mx-auto">
             {[
-              { src: "/img/kid-umbrella.svg", alt: "Kid with umbrella", maxW: "160px" },
-              { src: "/img/family-sun.svg", alt: "Family with sun", maxW: "180px" },
-              { src: "/img/small-family.svg", alt: "Small family", maxW: "140px" },
-              { src: "/img/balloons.svg", alt: "Balloons", maxW: "156px", rotate: true },
+              { src: "/img/kid-umbrella.svg", alt: "Kid with umbrella", maxW: "160px", showOnMobile: false },
+              { src: "/img/family-sun.svg", alt: "Family with sun", maxW: "100%", showOnMobile: true },
+              { src: "/img/small-family.svg", alt: "Small family", maxW: "140px", showOnMobile: false },
+              { src: "/img/balloons.svg", alt: "Balloons", maxW: "156px", rotate: true, showOnMobile: false },
             ].map((img, i) => (
-              <div key={i} className="flex justify-center">
+              <div
+                key={i}
+                className={`${
+                  img.showOnMobile ? "block" : "hidden"
+                } sm:flex justify-center w-full`}
+              >
                 <Image
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                   src={img.src}
                   alt={img.alt}
-                  className={`w-full max-w-[${img.maxW}] h-auto ${img.rotate ? "rotate-6" : ""}`}
+                  className={`h-auto ${img.showOnMobile ? "w-full max-w-full" : `max-w-[${img.maxW}]`} ${img.rotate ? "rotate-6" : ""}`}
                 />
               </div>
             ))}
@@ -178,8 +183,8 @@ export default function AboutSection() {
                     className="w-12 h-12 rounded-full object-cover mr-3"
                   />
                   <div className="flex flex-col">
-                    <p className="font-semibold text-gray-900 text-sm">{rev.name}</p>
-                    <p className="text-xs mt-2 text-gray-500">{rev.ago}</p>
+                    <p className="font-semibold text-[#4B4B4B] text-sm">{rev.name}</p>
+                    <p className="text-xs mt-2 text-[#4B4B4BB2]">{rev.ago}</p>
                   </div>
                 </div>
               </div>

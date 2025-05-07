@@ -16,14 +16,14 @@ export default function Footer() {
           <span className="font-bold text-xl">Family Rehab</span>
         </div>
 
-        <div className="flex flex-col justify-between h-[210px] text-xl items-start">
+        <div className="flex flex-col justify-between h-[130px] font-bold text-xl items-start">
         <Link href="/" className="hover:underline">Головна</Link>
         <Link href="/services" className="hover:underline">Послуги</Link>
         <Link href="/price" className="hover:underline">Ціни</Link>
         <Link href="/blog" className="hover:underline">Блог</Link>
         </div>
 
-        <div className="flex flex-col text-xl items-start space-y-2">
+        <div className="flex flex-col items-start space-y-2 font-bold">
           <p>м. Харків, вул. проїзд Стадіонний, 6/5</p>
           <a href="tel:+380682101302" className="hover:underline">
             +380 (68)‑21‑01‑302
@@ -31,9 +31,8 @@ export default function Footer() {
           <a href="tel:+380682101302" className="hover:underline">
             +380 (68)‑21‑01‑302
           </a>
-
-          <div className="mt-4">
-            <p className="font-medium mb-2">Соцмережі</p>
+          <div className="flex items-center gap-4 font-bold">
+            <p className="text-[18px]">Соцмережі</p>
             <div className="flex items-center gap-4">
               <a
                 href="viber://chat?number=+380660101302"
@@ -74,22 +73,21 @@ export default function Footer() {
                   height={24}
                 />
               </a>
-            </div>
+          </div>
           </div>
         </div>
-
-        <div className="flex flex-col items-start">
-          <h4 className="font-bold mb-4 text-xl">Графік роботи:</h4>
-          <p className="text-[20px]">Вівторок, четвер: 09:00 до 14:00</p>
-          <p className="text-[20px]">Субота: 09:00 до 14:00</p>
-          <p className="mt-6 text-[18px] font-medium">
+        <div className="flex flex-col items-start space-y-2">
+          <h4 className="text-[17px] font-bold">Графік роботи:</h4>
+          <p className="text-[17px] font-bold">Вівторок, четвер: 09:00 до 14:00</p>
+          <p className="text-[17px] font-bold">Субота: 09:00 до 14:00</p>
+          <p className="text-[17px] font-bold">
             Ліцензія №1243 від 17.11.2016 року
           </p>
         </div>
       </div>
 
-      <div className="mt-8 border-t border-white/50 pt-4 text-center text-sm flex flex-col sm:flex-row items-center justify-center gap-2 text-white">
-        <span className="opacity-80">сайт розроблено:</span>
+      <div className="w-full max-w-[1451px] mx-auto px-12 mt-8 border-t border-white/50 pt-4 text-center text-sm flex flex-col sm:flex-row items-center justify-start gap-2 text-white">
+        <span className=" opacity-80">сайт розроблено:</span>
 
         <a
           href="https://www.behance.net/b5a12831"

@@ -21,12 +21,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           height: "500px",
         }}
       >
-        <div className="text-white text-center text-lg font-bold uppercase px-10 pt-6 pb-3">
-          <div>{post.label}</div>
-          <div className="text-xl normal-case font-medium">{post.excerpt}</div>
+        <div className="text-white text-center font-['Source_Serif_Pro'] uppercase px-6 pt-6 pb-3">
+        <div className="text-[28px] sm:text-[40px] leading-[42px] sm:leading-[72px] font-bold mb-[20px]">
+          {post.label}
+        </div>
+        <div className="text-[20px] sm:text-[28px] leading-[32px] sm:leading-[60px] font-bold">
+          {post.excerpt}
         </div>
       </div>
-      <div className="absolute left-1/2 -translate-x-1/2 top-[120px] w-[90%] h-[500px]  overflow-hidden z-20 shadow-lg">
+      </div>
+      <div className="absolute left-1/2 -translate-x-1/2 top-[220px] sm:top-[180px] w-[90%] h-[500px] overflow-hidden z-20 shadow-lg">
         <Image
           src={post.cover}
           alt={post.title}
@@ -37,7 +41,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </div>
     </div>
     <div
-      className="prose w-full max-w-[800px] mx-auto prose-p:my-4 prose-li:marker:text-[#5DD3D3] prose-ul:list-disc prose-ul:pl-5 text-gray-800 text-[18px] px-4 sm:px-6 pb-10 pt-[180px]"
+      className="prose w-full max-w-[800px] mx-auto prose-p:my-4 prose-li:marker:text-[#5DD3D3] prose-ul:list-disc prose-ul:pl-5 text-gray-800 text-[18px] px-4 sm:px-6 pb-10 pt-[330px]"
       dangerouslySetInnerHTML={{ __html: post.content }}
     />
   </main>

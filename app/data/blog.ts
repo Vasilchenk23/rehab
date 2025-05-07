@@ -50,7 +50,7 @@ export const posts = [
     excerpt: "Причина головного болю?",
     cover: "/img/blog/blog3.svg",
     label: "ДОПЛЕР СУДИН",
-    labelColor: "#FAD9DD",
+    labelColor: "#44C2FF",
     content: `
       <p>У дітей головний біль — не рідкість. Але причина може ховатися у порушенні кровотоку. Доплерографія дозволяє побачити, як працюють судини шиї та голови, і запобігти серйозним проблемам у майбутньому.</p>
       </br>
@@ -64,7 +64,7 @@ export const posts = [
 
        <style>
         .custom-list li::marker {
-          color: #FAD9DD;
+          color: #44C2FF;
         }
       </style>
     `
@@ -75,7 +75,7 @@ export const posts = [
     excerpt: "Не лише для дорослих",
     cover: "/img/blog/blog4.svg",
     label: "МАНУАЛЬНА ТЕРАПІЯ",
-    labelColor: "#FF4E8A",
+    labelColor: "#FF2F65",
     content: `
       <p>М’які мануальні техніки допомагають при кривошиї, порушеннях постави, сколіозі, неврологічних проблемах. Дитячий організм дуже чутливий, тому мануальна терапія проводиться виключно фахівцем.</p>
       </br>
@@ -87,7 +87,7 @@ export const posts = [
       </ul>
        <style>
         .custom-list li::marker {
-          color: #FF4E8A;
+          color: #FF2F65;
         }
       </style>
     `
@@ -98,7 +98,7 @@ export const posts = [
     excerpt: "Коли потрібен?",
     cover: "/img/blog/blog5.svg",
     label: "ПСИХОЛОГ",
-    labelColor: "#FAD9DD",
+    labelColor: "#44C2FF",
     content: `
       <p>“Він просто сором'язливий” чи "Вона виросте і стане спокійнішою" — знайомі фрази? Але іноді за цим ховаються страхи, тривожність або навіть перші ознаки аутизму.</p>
       </br>
@@ -116,7 +116,7 @@ export const posts = [
       <p>Психолог не просто “розмовляє”, а через гру, малюнок і спостереження допомагає дитині відчути підтримку та стабільність.</p>
       <style>
         .custom-list li::marker {
-          color: #FAD9DD;
+          color: #44C2FF;
         }
       </style>
     `
@@ -151,7 +151,7 @@ export const posts = [
     excerpt: "Вікно у мозок немовляти",
     cover: "/img/blog/blog7.svg",
     label: "НЕЙРОСОНОГРАФІЯ",
-    labelColor: "#FF4E8A",
+    labelColor: "#FF2F65",
     content: `
       <p>Поки тім’ячко ще відкрите, є унікальна можливість зробити УЗД мозку — нейросонографію. Це безпечне дослідження дозволяє виявити вроджені патології, крововиливи або гідроцефалію на ранніх етапах.</p>
       </br>
@@ -163,7 +163,7 @@ export const posts = [
       </ul>
        <style>
         .custom-list li::marker {
-          color: #FF4E8A;
+          color: #FF2F65;
         }
       </style>
     `
@@ -193,11 +193,11 @@ export const posts = [
   },
   {
     slug: "vp-potentsialy",
-    title: "ВП — слухові та зорові",
+    title: "Викликані потенціали",
     excerpt: "Як перевірити слух і зір?",
     cover: "/img/blog/blog9.svg",
-    label: "ВП - СЛУХОВІ ТА ЗОРОВІ",
-    labelColor: "#FF4E8A",
+    label: "ВИКЛИКАНI ПОТЕНЦIАЛИ",
+    labelColor: "#FF2F65",
     content: `
       <p>Викликані потенціали: зорові та слухові тести. Ці методи дозволяють оцінити, як мозок реагує на візуальні чи слухові стимули. Це особливо важливо, якщо є підозра на порушення слуху або зору, які важко визначити у малюків.</p>
       </br>
@@ -212,18 +212,18 @@ export const posts = [
       <p>Психолог не просто “розмовляє”, а через гру, малюнок і спостереження допомагає дитині відчути підтримку та стабільність.</p>
       <style>
         .custom-list li::marker {
-          color: #FF4E8A;
+          color: #FF2F65;
         }
       </style>
     `
   },
   {
     slug: "kulshovi-sugloby",
-    title: "Кульшові суглоби",
+    title: "УЗД кульшових суглобів",
     excerpt: "На що звернути увагу?",
     cover: "/img/blog/blog10.svg",
-    label: "КУЛЬШОВІ СУГЛОБИ",
-    labelColor: "#FAD9DD",
+    label: "УЗД КУЛЬШОВИХ СУГЛОБIВ",
+    labelColor: "#44C2FF",
     content: `
       <p> УЗД кульшових суглобів: дисплазію краще побачити рано</p>
       </br>
@@ -237,7 +237,7 @@ export const posts = [
       </ul>
        <style>
         .custom-list li::marker {
-          color: #FAD9DD;
+          color: #44C2FF;
         }
       </style>
     `

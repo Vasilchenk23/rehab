@@ -50,7 +50,7 @@ export default function PriceListPage() {
           >
             <span className="text-gray-800 w-[240px] text-sm sm:text-base">{item.name}</span>
             <div className="hidden sm:block flex-grow border-t border-dashed border-gray-300 mx-4" />
-            <span className="text-gray-800 text-sm sm:text-base sm:text-right sm:w-24">
+            <span className="text-[#FF2F65] sm:text-gray-800 text-sm sm:text-base sm:text-right sm:w-24">
               {item.price} грн
             </span>
           </div>
