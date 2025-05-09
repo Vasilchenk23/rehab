@@ -61,7 +61,7 @@ export default function Footer() {
                 />
               </a>
               <a
-                href="https://instagram.com/yourprofile"
+                href="https://www.instagram.com/family_rehab/"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:opacity-70 transition"
