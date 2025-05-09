@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between h-[130px] font-bold text-xl items-start">
         <Link href="/" className="hover:underline">Головна</Link>
         <Link href="/services" className="hover:underline">Послуги</Link>
-        <Link href="/price" className="hover:underline">Ціни</Link>
+        <Link href="/prices" className="hover:underline">Ціни</Link>
         <Link href="/blog" className="hover:underline">Блог</Link>
         </div>
 
